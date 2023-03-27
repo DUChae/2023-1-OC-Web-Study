@@ -67,17 +67,17 @@
 - 진행 과정 중 배운 점이나 발생한 문제점
   - error: src refspec master does not match any
   - error: failed to push some refs to…
-  이유
+    이유
   - 해당 에러는 깃허브에서 pull 없이 push 할 경우 기존 내용을 삭제하거나 하는 문제가 생길 수 있기 떄문에 에러 메시지 발생시키는 것
-  해결
-  해당 에러가 발생하면 아래의 순서대로 다시 명령어를 입력.
-  새로운 깃 리파지토리를 init하고, 다시 push 하는 방법이다.
-  **git init**
-  **git add .**
-  **git commit -m "message"**
-  **git remote add origin "github.com/your-repo.git"**
-  **git push -u origin master**
-  이후 새로운 내용이 추가되거나 수정되었을 때,
-  **git add . (또는 특정 파일이나 폴더)**
-  **git commit -m "message"**
-  **git push -u origin master**
+    해결
+    해당 에러가 발생하면 아래의 순서대로 다시 명령어를 입력.
+    새로운 깃 리파지토리를 init하고, 다시 push 하는 방법이다.
+    **git init**
+    **git add .**
+    **git commit -m "message"**
+    **git remote add origin "github.com/your-repo.git"**
+    **git push -u origin master**
+    이후 새로운 내용이 추가되거나 수정되었을 때,
+    **git add . (또는 특정 파일이나 폴더)**
+    **git commit -m "message"**
+    **git push -u origin master**
