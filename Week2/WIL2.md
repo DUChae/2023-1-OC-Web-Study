@@ -27,6 +27,38 @@
       1. 원격 서버에서 최신 commit들을 내려받아 현재 로컬 브랜치와 자동 병합
       2. 혼자 개발하는 프로젝트에서는 pull 만 써도 상관 없지만 협업할 때에는 pull의 자동병합은 문제가 될 떄가 많다.
       3. git pull= fetch + merge
+2. 지난 주와 이번주 학습 내용을 정리하고 WIL을 작성하여 제출한다.
+
+   1주차
+
+   1. URI: Uniform Resource Idenitifer
+      1. URI= URN+URL
+   2. URL: Uniform Resource Location
+      1. 위치로 찾기
+      2. 프로토콜 + DNS주소
+   3. URN : Uniform Resource Name
+      1. 이름으로 찾기
+   4. 홍익대학교 홉페이지에서 HTML , CSS, JS무엇인지 확인
+      1. HTML : 자료 ( 뼈대)
+      2. CSS:UI(살과 옷)
+      3. JavaScript : 제어
+
+   2주차
+
+   1. Git : 컴퓨터 파일의 변경사항을 추적하고 협업 작업을 조율해주는 무언가
+   2. Git이 관리하는 파일의 4가지 상태
+      1. Untracked
+      2. Unmodified
+      3. Modified
+      4. Staged
+   3. 영역
+      1. 작업 디렉토리 : 파일이 저장되어 있는 로컬 디렉토리
+      2. 스테이징 역역 : 변경 사항이 일시적으로 저장되는 곳
+      3. 저장소 ( 리포지토리 ) 영역 : 변역 사항이 영구적으로 저장되는 곳
+   4. Git add, commit
+      1. git add는 작업 디렉토리에서 변경된 파일들을 git의 스테이징 영역에 추가하는 작업 수행
+         1. 해당 파일의 변경 사항 추적
+      2. git commit 사용 시 변경 사항을 커밋하여 영구적으로 저장소에 저장할 수 있게 된다.
 
 ### 선택과제
 
@@ -35,17 +67,17 @@
 - 진행 과정 중 배운 점이나 발생한 문제점
   - error: src refspec master does not match any
   - error: failed to push some refs to…
-    이유
+  이유
   - 해당 에러는 깃허브에서 pull 없이 push 할 경우 기존 내용을 삭제하거나 하는 문제가 생길 수 있기 떄문에 에러 메시지 발생시키는 것
-    해결
-    해당 에러가 발생하면 아래의 순서대로 다시 명령어를 입력.
-    새로운 깃 리파지토리를 init하고, 다시 push 하는 방법이다.
-    **git init**
-    **git add .**
-    **git commit -m "message"**
-    **git remote add origin "github.com/your-repo.git"**
-    **git push -u origin master**
-    이후 새로운 내용이 추가되거나 수정되었을 때,
-    **git add . (또는 특정 파일이나 폴더)**
-    **git commit -m "message"**
-    **git push -u origin master**
+  해결
+  해당 에러가 발생하면 아래의 순서대로 다시 명령어를 입력.
+  새로운 깃 리파지토리를 init하고, 다시 push 하는 방법이다.
+  **git init**
+  **git add .**
+  **git commit -m "message"**
+  **git remote add origin "github.com/your-repo.git"**
+  **git push -u origin master**
+  이후 새로운 내용이 추가되거나 수정되었을 때,
+  **git add . (또는 특정 파일이나 폴더)**
+  **git commit -m "message"**
+  **git push -u origin master**
